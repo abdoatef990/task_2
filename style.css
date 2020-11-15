@@ -1,0 +1,301 @@
+body
+{
+    background-image:url("Parallax-Background-Dark-04.jpg");
+    background-size:initial;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ho{
+    color: rgb(186, 209, 140);
+    margin-left: 40px;
+    margin-top: 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.navbar 
+{
+    position: absolute;
+    right: 0px;
+    width: 260px;
+    height: 100%;
+    background-color: #000000;
+    text-align:center;
+    transition: 0.800s ease;
+}
+.navbar > .side-nav{
+    list-style-type: none;
+    font-size: 19px;
+    font-family: sans-serif;
+    margin: 15px;
+    padding: 0px;
+}
+.nav-item
+{
+    display: flex;
+}
+.nav-item > .nav-link
+{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 1.1em;
+    padding: 1em;
+    flex: 1;
+}
+.nav-item > .nav-link:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
+.toggle-collapse
+{
+    float: left;
+    margin-left: -3.3em;
+    margin-top: .5em;
+    content:"";
+    outline: inherit;
+    border: 0px;
+    background: transparent;
+}
+
+.toggle-icon,
+.toggle-icon::before,
+.toggle-icon::after
+{
+    content:"";
+    width: 30px;
+    height: 3px;
+    position:fixed;
+    background-color:whitesmoke;
+    border-radius: 2em;
+    border:1px solid whitesmoke;
+    cursor : pointer;
+    transition: 0.800s ease;
+    margin-top: 0.8em;
+}
+.toggle-icon::before
+{
+    position: absolute;
+    left: -1px;
+    margin-top: -0.8em;
+}
+.toggle-icon::after
+{
+    position: absolute;
+    left: -1px;
+    margin-top: 0.6em;
+    width: 20px;
+}
+.toggle-icon{
+    width: 15px;
+}
+.show .toggle-icon::after{
+    width: 30px;
+}
+.show .toggle-icon
+{
+    width: 30px;
+}
+.nav-item > .site-name
+{
+    text-decoration: none;
+    padding: 1.7em;
+    font-size: 2em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+}
+.nav-item:last-child > .nav-link i{
+        padding: .5em;
+}
+.nav-item:last-child > .nav-link {
+    background-color: black;
+    color: white;
+}
+
+.login-form 
+{
+    text-align:center;
+    color: whitesmoke;
+    padding:0px;
+
+    margin-right: 300px;
+    margin-left: 390px;
+    width: 300px;
+}
+.form-title 
+{
+    text-align: center;
+    padding: 0px 0;
+    margin-left: 20px;
+    width: 100%;
+}
+label
+{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+input
+{
+    margin-right: 10px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+}
+button,input
+{
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 350px;
+    padding: 18px;
+    background-color: #b7b8bd;
+    text-shadow: 2px 2px 0 rgb(212, 210, 210);
+}
+.form-title h1{color: rgb(97, 97, 211); font-size: 50px; text-decoration: cyan;}
+button
+{
+    color: #61677c;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:active{
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.red 
+{
+    display: block;
+    width: 325px;
+    color: rgb(153, 3, 33);
+}
+.red i{margin : 5px}
+.forg
+{
+    display: block;
+    width: 325px;
+    color:rgb(136, 4, 30);
+}
+.remember-me
+{
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    width: 325px;
+    font-size: 23px;
+    color: lightsteelblue;
+}
+.input-checkbox {display: none;}
+.label-checkbox 
+{
+    margin: 0;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+}
+.label-checkbox::before
+{
+    content:"\f00c";
+    font-family:FontAwesome;
+    font-size: 13px;
+    color : transparent;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #e6e6e6;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    margin-left: 30px;
+}
+
+.input-checkbox:checked + .label-checkbox::before{color: #8a121c;}
+::-webkit-scrollbar{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+      
+        <title>task2</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/e2d4243951.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        
+      
+       <div class="container">
+           <nav class="navbar" id="navID">
+               <button type="button" onclick="myFnc(this)" class="toggle-collapse"
+               id="toggle-button">
+               <span class="toggle-icon"></span>                   
+               </button>
+
+               <ul class="side-nav">
+                <li class="nav-item">
+                    <a href="#" class="site-name">Menu</a>
+                </li>
+                   <li class="nav-item">
+                       <a href="#" class="nav-link">Home</a>
+                   </li>
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+               </ul>
+           </nav>
+       </div>
+       <h1 class="ho">HOPE</h1>
+       <script>
+           function myFnc(e)
+           {
+               e.classList.toggle("show");
+
+            var elem = document.getElementById("navID"),
+            style = window.getComputedStyle(elem),
+            right = style.getPropertyValue("right");
+
+            if(right == "0px"){
+                elem.style.right="-260px";
+            }else{
+                elem.style.right="0px";
+            }
+           }
+       </script>
+
+<div class="login-form">
+    <div class="form-title">
+        <h1>Facebook</h1>
+    </div>
+    <label><input type="text" placeholder="username" name="name"></label>
+    <label><input type="password" placeholder="password" name="password"></label>
+<div class="remember-me">
+    <input class="input-checkbox" type="checkbox" name="remember-me" id="ckb1">
+    <label class="label-checkbox" for="ckb1">
+        <span class="txt1">remember me click here.</span>
+    </label>
+</div>
+<button class="red" type="button" ><i class="fas fa-unlock"></i>login</button><br>
+<button class="forg" type="button" ><i class="fas fa-lock"></i>forget password or signup ?</button>
+
+
+</div>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
